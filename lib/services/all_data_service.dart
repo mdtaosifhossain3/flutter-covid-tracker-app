@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:covidtracker/models/dataModel.dart';
-import 'package:covidtracker/utils/apiLinks.dart';
+import 'package:covidtracker/models/data_model.dart';
+import 'package:covidtracker/utils/api_links.dart';
 import 'package:http/http.dart' as http;
 
 class AllData {

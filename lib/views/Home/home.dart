@@ -1,13 +1,12 @@
 import 'package:covidtracker/constants/colors.dart';
-import 'package:covidtracker/models/dataModel.dart';
+import 'package:covidtracker/models/data_model.dart';
 import 'package:covidtracker/services/all_data_service.dart';
 
 import 'package:covidtracker/views/ListofCountries/list_of_countries_screen.dart';
 import 'package:covidtracker/views/globalWidgets/row.dart';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_svg/svg.dart';
+
 import 'package:pie_chart/pie_chart.dart';
 
 class Home extends StatefulWidget {
