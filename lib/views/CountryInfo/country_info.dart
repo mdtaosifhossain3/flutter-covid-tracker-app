@@ -1,3 +1,4 @@
+import 'package:covidtracker/constants/colors.dart';
 import 'package:covidtracker/views/ListofCountries/list_of_countries_screen.dart';
 import 'package:covidtracker/views/globalWidgets/row.dart';
 import 'package:flutter/material.dart';
@@ -59,7 +60,7 @@ class _CountryInfoState extends State<CountryInfo> {
                         right: 10,
                         bottom: 10),
                     decoration: BoxDecoration(
-                        color: const Color(0xffe4e4e4),
+                        color: AppColors.midWhiteColor,
                         borderRadius: BorderRadius.circular(8)),
                     child: Column(
                       children: [

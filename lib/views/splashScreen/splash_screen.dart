@@ -4,6 +4,8 @@ import 'package:covidtracker/views/Home/home.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'package:flutter_svg/flutter_svg.dart';
+
 class SplashScreen extends StatefulWidget {
   SplashScreen({super.key});
 
@@ -44,12 +46,10 @@ class _SplashScreenState extends State<SplashScreen>
             children: [
               AnimatedBuilder(
                   animation: _controller,
-                  child: const SizedBox(
+                  child: SizedBox(
                     width: 200,
                     height: 200,
-                    child: Image(
-                      image: AssetImage("images/virus.png"),
-                    ),
+                    child: Image.asset("images/logo.png"),
                   ),
                   builder: (context, Widget? child) {
                     return Transform.rotate(
@@ -64,9 +64,9 @@ class _SplashScreenState extends State<SplashScreen>
                 "Covid-19\nTracker App",
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 16,
-                    color: Colors.black87),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 16,
+                ),
               )
             ],
           ),

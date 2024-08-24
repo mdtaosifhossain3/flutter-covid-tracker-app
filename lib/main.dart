@@ -1,3 +1,4 @@
+import 'package:covidtracker/constants/colors.dart';
 import 'package:covidtracker/views/splashScreen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -15,9 +16,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Covid Tracker App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blue,
-        ),
+        brightness: Brightness.dark,
+        appBarTheme: AppBarTheme(
+            backgroundColor: AppColors.blackColor,
+            surfaceTintColor: AppColors.blackColor),
+        scaffoldBackgroundColor: AppColors.blackColor,
+        colorScheme: ColorScheme.dark(primary: AppColors.primaryColor),
         useMaterial3: true,
       ),
       home: SplashScreen(),

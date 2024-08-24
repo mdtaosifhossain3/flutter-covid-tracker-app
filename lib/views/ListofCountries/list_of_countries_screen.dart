@@ -1,3 +1,4 @@
+import 'package:covidtracker/constants/colors.dart';
 import 'package:covidtracker/services/country_info_service.dart';
 import 'package:covidtracker/views/CountryInfo/country_info.dart';
 import 'package:covidtracker/views/Home/home.dart';
@@ -46,11 +47,11 @@ class _ListOfCountriesScreenState extends State<ListOfCountriesScreen> {
                         hintText: "Search Country Here....",
                         enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(40),
-                            borderSide: const BorderSide(color: Colors.grey)),
+                            borderSide: BorderSide(color: AppColors.greyColor)),
                         focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(40),
-                            borderSide: const BorderSide(
-                                color: Color(0xff3366CC), width: 2.00))),
+                            borderSide: BorderSide(
+                                color: AppColors.jadeColor, width: 2.00))),
                   ),
                   const SizedBox(
                     height: 15,
@@ -67,21 +68,18 @@ class _ListOfCountriesScreenState extends State<ListOfCountriesScreen> {
                                 return Shimmer.fromColors(
                                   baseColor: Colors.grey.shade700,
                                   highlightColor: Colors.grey.shade100,
-                                  child: ListTile(
-                                    leading: Container(
+                                  child: const ListTile(
+                                    leading: SizedBox(
                                       height: 50,
                                       width: 50,
-                                      color: Colors.white,
                                     ),
-                                    title: Container(
+                                    title: SizedBox(
                                       width: 89,
                                       height: 10,
-                                      color: Colors.white,
                                     ),
-                                    subtitle: Container(
+                                    subtitle: SizedBox(
                                       width: 89,
                                       height: 10,
-                                      color: Colors.white,
                                     ),
                                   ),
                                 );
@@ -142,8 +140,9 @@ class _ListOfCountriesScreenState extends State<ListOfCountriesScreen> {
                                       subtitle: Text(
                                         snapshot.data![index]["cases"]
                                             .toString(),
-                                        style: const TextStyle(
-                                            fontSize: 14, color: Colors.grey),
+                                        style: TextStyle(
+                                            fontSize: 14,
+                                            color: AppColors.greyColor),
                                       ),
                                     ),
                                   );
@@ -198,8 +197,9 @@ class _ListOfCountriesScreenState extends State<ListOfCountriesScreen> {
                                       subtitle: Text(
                                         snapshot.data![index]["cases"]
                                             .toString(),
-                                        style: const TextStyle(
-                                            fontSize: 14, color: Colors.grey),
+                                        style: TextStyle(
+                                            fontSize: 14,
+                                            color: AppColors.greyColor),
                                       ),
                                     ),
                                   );

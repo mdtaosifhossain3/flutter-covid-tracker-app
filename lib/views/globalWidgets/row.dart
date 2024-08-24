@@ -1,3 +1,4 @@
+import 'package:covidtracker/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class ReusableRow extends StatelessWidget {
@@ -14,9 +15,12 @@ class ReusableRow extends StatelessWidget {
         children: [
           Text(
             title!,
-            style: const TextStyle(fontWeight: FontWeight.bold),
+            style: TextStyle(
+                fontWeight: FontWeight.bold, color: AppColors.blackColor),
           ),
-          Text(value!, style: const TextStyle(fontWeight: FontWeight.bold)),
+          Text(value!,
+              style: TextStyle(
+                  fontWeight: FontWeight.bold, color: AppColors.blackColor)),
         ],
       ),
     );

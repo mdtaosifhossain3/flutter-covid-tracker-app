@@ -1,3 +1,4 @@
+import 'package:covidtracker/constants/colors.dart';
 import 'package:covidtracker/models/dataModel.dart';
 import 'package:covidtracker/services/all_data_service.dart';
 
@@ -5,6 +6,8 @@ import 'package:covidtracker/views/ListofCountries/list_of_countries_screen.dart
 import 'package:covidtracker/views/globalWidgets/row.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:pie_chart/pie_chart.dart';
 
 class Home extends StatefulWidget {
@@ -24,6 +27,14 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Covid Tracker",
+          style: TextStyle(
+              fontWeight: FontWeight.bold, color: AppColors.jadeColor),
+        ),
+        automaticallyImplyLeading: false,
+      ),
       body: Center(
         child: SingleChildScrollView(
           child: Column(
@@ -107,7 +118,7 @@ class _HomeState extends State<Home> {
                               margin: const EdgeInsets.all(15),
                               height: 50,
                               decoration: BoxDecoration(
-                                  color: Colors.blue,
+                                  color: AppColors.jadeColor,
                                   borderRadius: BorderRadius.circular(4)),
                               child: InkWell(
                                 onTap: () => Navigator.push(context,
@@ -118,7 +129,6 @@ class _HomeState extends State<Home> {
                                     child: Text(
                                   "Track Countries",
                                   style: TextStyle(
-                                      color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 16),
                                 )),
