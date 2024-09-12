@@ -1,16 +1,22 @@
-# CovidTracker
+# COVID-19 Tracker App
 
-A new Flutter project.
+![image alt](https://github.com/mdtaosifhossain3/flutter-covid-tracker-app/blob/272c5d463b986a0c89fea8792900e5cdea106143/covid_tracker_mockup.png)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+This is a Flutter application that provides real-time statistics and charts related to COVID-19. The app utilizes the disease.sh API to fetch and display data on total cases, deaths, recoveries, and more. Users can also search for COVID-19 statistics by country.
 
-A few resources to get you started if this is your first Flutter project:
+# Features :
+Global Statistics: View total confirmed cases, deaths, and recoveries worldwide.
+Country-Specific Data: Search and view COVID-19 statistics for specific countries.
+Charts: Visual representation of COVID-19 data including confirmed cases, deaths, and recoveries.
+Search Functionality: Easily search for and filter data by country.
+Responsive UI: Adaptable layout for different screen sizes and orientations.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Usage :
+Launch the app on your device.
+Browse through the global COVID-19 statistics on the home screen.
+Use the search bar to find specific country data.
+View detailed statistics and charts for selected countries.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# API Reference :
+This app uses the disease.sh API to retrieve COVID-19 data. For more details on the API, visit their documentation.
